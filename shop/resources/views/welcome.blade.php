@@ -13,7 +13,7 @@
     <div class="container" style="border-style: dotted solid;">
         <div class="row" style="border-style: dotted solid;">
           <div class="col-md-12" style="border-style: dotted solid;">Picture Head</div>
-          <div class="col-md-12" style="border-style: dotted solid;">Menu</div>
+          <div class="col-md-12" style="border-style: dotted solid;">LOVE NI</div>
           <div class="col-md-4" style="border-style: dotted solid;">Sidebar</div>
           <div class="col-md-8" style="border-style: dotted solid;">Content</div>
       </div>
