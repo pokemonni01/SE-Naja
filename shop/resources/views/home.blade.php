@@ -33,6 +33,7 @@ function MM_preloadImages() { //v3.0
     <td width="190" height="71" bgcolor="#FFFFFF">&nbsp;</td>
     <td width="780" bgcolor="#FFFFFF" class="size5"><p>&nbsp;</p>
     <p>&nbsp;</p>
+    <p>นิ หน้าตัวเมีย </p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
