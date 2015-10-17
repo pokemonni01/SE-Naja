@@ -152,19 +152,12 @@ ul.nav a { zoom: 1; }  /* the zoom property gives IE the hasLayout trigger it ne
 <div class="container">
   <div class="header"><!-- end .header -->
     <p><a href="#"></a><a href="#"><img src="../Downloads/11334073_814031698678437_4854476091968632827_o.jpg" width="983" height="403" /></a></p>
-   <center> <table width="1010" border="1">
-      <tr>
-        <td width="1000" height="50"><ul id="MenuBar1" class="MenuBarHorizontal">
-          <center>
-          <li><center><a href="#">หน้าแรก</a></center></li>
-          <li><center><a href="#">วิธีการสั่งซื้อ</a></center></li>
-          <li><center><a href="#">แจ้งชำระเงิน</a></center></li>
-          <li><center><a href="#">ติดต่อเรา</a></center></li>
-           <li><center><a href="#">แผนผังเว็บไซต์</a></center></li>
-           </center>
-        </ul></td>
-      </tr>
-    </table>
+   <center> 
+   <ul class="list-inline">
+  <li>...</li>
+  <li>...</li>
+  <li>...</li>
+</ul>
    </center>
   </div>
   <div class="sidebar1">
