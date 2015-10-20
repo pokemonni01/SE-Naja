@@ -19,6 +19,9 @@ class Home_Controller extends Controller
 	public function design_goods(){
 		return view('design_goods');
 	}
+	public function register(){
+		return view('register');
+	}
 
 
 }

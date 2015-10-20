@@ -5,17 +5,17 @@
 <title>I LOVE ACCESSORIES</title>
 <style type="text/css">
 .size5 {
-	font-size: 36px;
-	text-align: left;
-	font-weight: bold;
+  font-size: 36px;
+  text-align: left;
+  font-weight: bold;
 }p {
-	margin-top: 0;
-	padding-right: 15px;
-	padding-left: 15px;
-	font-weight: bold;
-	text-align: left;
-	font-family: "DSU_Single";
-	font-size: 24px;
+  margin-top: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-weight: bold;
+  text-align: left;
+  font-family: "DSU_Single";
+  font-size: 24px;
 }
 </style>
 <script type="text/javascript">
@@ -47,29 +47,47 @@ function MM_preloadImages() { //v3.0
     </center></td>
   </tr>
   <tr>
-    <td width="190" height="71" bgcolor="#FFFFFF">
-    <p>Usename</p>
-   	<form id="form2" name="form2" method="post" action="">
-      <p>
-        <label for="usename2"></label>
-        <input name="usename" type="text" id="usename2" value="" />
-      </p>
-    </form>
-    <p>Password</p>
-    <form id="form3" name="form3" method="post" action="">
-      <p>
-        <label for="password"></label>
-        <input type="password" name="password" id="password" />
-      </p>
-    </form>
-  	<p> <button type="Login" class="MenuBarItemSubmenuHover"  id="login"  >Login</button> </p>
-  	<p>&nbsp;</p>
-  	<p>&nbsp;</p>
-  	<p>&nbsp;</p>
-  	<p>&nbsp;</p>
-  	<p>&nbsp;</p>
-  	<p>&nbsp;</p>
-  	<p>&nbsp;</p></td>
+    <td width="190" height="71" bgcolor="#ffffff">
+    
+    <HTML>
+        <Body>
+            
+            <FORM  METHOD="POST" ACTION="chkmemer.php">
+                <Table>
+                <TR>
+
+                <Title>: : Login : :</Title>
+                
+                
+                <TD><B>Username  : </B> </TD>
+                <TD><INPUT Name="user_reg" Type="text" size="15"></TD>
+                </TR>
+                <TR>
+                <TD><B>Password  : </B></TD>
+                <TD><Input Name="pass_reg" Type="password" size="16"></TD>
+                </TR>
+                </TABLE>
+
+                <input type="button" name="login" id="login" value="เข้าสู่ระบบ" style = "background-color:transparent" onclick="window.location='login'" />
+
+                <input type="button" name="forget" id="forget" value="ลืมรหัสผ่าน" style = "background-color:transparent" onclick="window.location='register'" />
+
+                
+                <input type="button" name="register" id="login" value="ลงทะเบียน" style = "background-color:transparent" onclick="window.location='register'" />
+
+
+            </FORM>
+        </BODY>
+    </HTML>
+
+
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p></td>
     <td width="780" bgcolor="#FFFFFF" class="size5"><p>รักนะค่ะ คนดีของฉัน</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
