@@ -2,20 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>I LOVE ACCESSORIES</title>
+<title>Untitled Document</title>
 <style type="text/css">
 .size5 {
 	font-size: 36px;
 	text-align: left;
 	font-weight: bold;
-}p {
-	margin-top: 0;
-	padding-right: 15px;
-	padding-left: 15px;
-	font-weight: bold;
-	text-align: left;
-	font-family: "DSU_Single";
-	font-size: 24px;
 }
 </style>
 <script type="text/javascript">
@@ -30,48 +22,18 @@ function MM_preloadImages() { //v3.0
 <body>
 <table width="986" height="971" border="1">
   <tr>
-    <td height="409" colspan="2"><img src="bootstrap/image/Jp/black_widow_captain_america_the_winter_soldier-wide.jpg" width="974" height="402" /></td>
+    <td height="409" colspan="2"><p><img src="bootstrap/image/Jp/black_widow_captain_america_the_winter_soldier-wide.jpg" width="974" height="402" /></p></td>
   </tr>
   <tr>
     <td height="38" colspan="2" bgcolor="#FFFFFF"><center>
-      <center>
-      <nav>
-      <a href="http://localhost:8888/SE">หน้าแรก</a>|
-      <a href="http://localhost:8888/SE">วิธีการสั่งซื้อ</a>|
-      <a href="http://localhost:8888/SE/design_goods">ออกแบบผลิตภัณฑ์</a>|
-      <a href="http://localhost:8888/SE">แจ้งชำระเงิน</a>|
-      <a href="http://localhost:8888/SE/contact">ติดต่อเรา</a>
-      
-      </nav>
-      </center>
+   <center></center>
     </center></td>
   </tr>
   <tr>
-    <td width="190" height="71" bgcolor="#FFFFFF">
-    <p>Usename</p>
-   	<form id="form2" name="form2" method="post" action="">
-      <p>
-        <label for="usename2"></label>
-        <input name="usename" type="text" id="usename2" value="" />
-      </p>
-    </form>
-    <p>Password</p>
-    <form id="form3" name="form3" method="post" action="">
-      <p>
-        <label for="password"></label>
-        <input type="password" name="password" id="password" />
-      </p>
-    </form>
-  	<p> <button type="Login" class="MenuBarItemSubmenuHover"  id="login"  >Login</button> </p>
-  	<p>&nbsp;</p>
-  	<p>&nbsp;</p>
-  	<p>&nbsp;</p>
-  	<p>&nbsp;</p>
-  	<p>&nbsp;</p>
-  	<p>&nbsp;</p>
-  	<p>&nbsp;</p></td>
-    <td width="780" bgcolor="#FFFFFF" class="size5"><p>รักนะค่ะ คนดีของฉัน</p>
+    <td width="190" height="71" bgcolor="#FFFFFF">&nbsp;</td>
+    <td width="780" bgcolor="#FFFFFF" class="size5"><p>&nbsp;</p>
     <p>&nbsp;</p>
+    <p>นิ หน้าตัวเมีย </p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
@@ -83,5 +45,6 @@ function MM_preloadImages() { //v3.0
     <td height="47" colspan="2" bgcolor="#FFFFFF"><p>&nbsp;</p></td>
   </tr>
 </table>
+
 </body>
 </html>
