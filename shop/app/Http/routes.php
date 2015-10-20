@@ -14,5 +14,9 @@
 //Route::get('/', function () {return view('home');});
 Route::get('/admin', function () {return view('admin');});
 Route::get('/','Home_Controller@home');
+Route::get('/contact','Home_Controller@contactrr');
+Route::get('/home1','Home_Controller@home11');
+Route::get('/design_goods','Home_Controller@design_goods');
+
 
 

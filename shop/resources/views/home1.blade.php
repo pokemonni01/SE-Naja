@@ -36,12 +36,8 @@ function MM_preloadImages() { //v3.0
     <td height="38" colspan="2" bgcolor="#FFFFFF"><center>
       <center>
       <nav>
-      <a href="http://localhost:8888/SE">หน้าแรก</a>|
-      <a href="http://localhost:8888/SE">วิธีการสั่งซื้อ</a>|
-      <a href="http://localhost:8888/SE/design_goods">ออกแบบผลิตภัณฑ์</a>|
-      <a href="http://localhost:8888/SE">แจ้งชำระเงิน</a>|
-      <a href="http://localhost:8888/SE/contact">ติดต่อเรา</a>
-      
+      <a href="http://localhost:8888/SE/home1">หน้าแรก</a>|
+      <a href="http://localhost:8888/SE/contact">ติดต่อ</a>
       </nav>
       </center>
     </center></td>
