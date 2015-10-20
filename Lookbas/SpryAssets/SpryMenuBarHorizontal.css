@@ -19,7 +19,6 @@ ul.MenuBarHorizontal
 	font-size: 100%;
 	cursor: default;
 	width: auto;
-	color: #000;
 }
 /* Set the active Menu Bar with this class, currently setting z-index to accomodate IE rendering bug: http://therealcrisp.xs4all.nl/meuk/IE-zindexbug.html */
 ul.MenuBarActive
@@ -32,15 +31,12 @@ ul.MenuBarHorizontal li
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	font-size: 24px;
+	font-size: 100%;
 	position: relative;
 	text-align: left;
 	cursor: pointer;
-	width: 20%;
+	width: 12.5em;
 	float: left;
-	font-family: "DSU_Single";
-	height: 40px;
-	color: #FFF;
 }
 /* Submenus should appear below their parent (top: 0) with a higher z-index, but they are initially off the left side of the screen (-1000em) */
 ul.MenuBarHorizontal ul
@@ -96,15 +92,15 @@ ul.MenuBarHorizontal a
 	cursor: pointer;
 	background-color: #EEE;
 	padding: 0.5em 0.75em;
+	color: #333;
 	text-decoration: none;
 }
 /* Menu items that have mouse over or focus have a blue background and white text */
 ul.MenuBarHorizontal a:hover, ul.MenuBarHorizontal a:focus
 {
+	background-color: #33C;
+	color: #FFF;
 	text-align: center;
-	font-size: 100%;
-	font-family: "DSU_Single";
-	background-color: #FFF;
 }
 /* Menu items that are open with submenus are set to MenuBarItemHover with a blue background and white text */
 ul.MenuBarHorizontal a.MenuBarItemHover, ul.MenuBarHorizontal a.MenuBarItemSubmenuHover, ul.MenuBarHorizontal a.MenuBarSubmenuVisible
