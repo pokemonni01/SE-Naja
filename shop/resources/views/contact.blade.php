@@ -38,10 +38,9 @@ function MM_preloadImages() { //v3.0
       <nav>
       <a href="http://localhost:8888/SE">หน้าแรก</a>|
       <a href="http://localhost:8888/SE">วิธีการสั่งซื้อ</a>|
-      <a href="http://localhost:8888/SE/design_goods">ออกแบบผลิตภัณฑ์</a>|
+      <a href="http://localhost:8888/SE">ออกแบบผลิตภัณฑ์</a>|
       <a href="http://localhost:8888/SE">แจ้งชำระเงิน</a>|
       <a href="http://localhost:8888/SE/contact">ติดต่อเรา</a>
-      
       </nav>
       </center>
     </center></td>
@@ -70,7 +69,7 @@ function MM_preloadImages() { //v3.0
   	<p>&nbsp;</p>
   	<p>&nbsp;</p>
   	<p>&nbsp;</p></td>
-    <td width="780" bgcolor="#FFFFFF" class="size5"><p>รักนะค่ะ คนดีของฉัน</p>
+    <td width="780" bgcolor="#FFFFFF" class="size5"><p>ติดต่อ นายศรายุทธ</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
