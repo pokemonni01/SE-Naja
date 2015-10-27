@@ -18,4 +18,15 @@ Route::get('/contact','Home_Controller@contactrr');
 Route::get('/design_goods','Home_Controller@design_goods');
 Route::get('/register','Home_Controller@register');
 
+Route::get('/dashboard','Admin_Controller@admin');
+Route::get('/stock','Admin_Controller@admin');
+Route::get('/report','Admin_Controller@admin');
+Route::get('/export','Admin_Controller@admin');
+
+
+
+
+
+
+
 
