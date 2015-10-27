@@ -36,8 +36,8 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
     <td height="38" colspan="2" bgcolor="#FFFFFF">
-
-    @include('header')
+    
+    @yield('header')
        </td>
   </tr>
   <tr>
