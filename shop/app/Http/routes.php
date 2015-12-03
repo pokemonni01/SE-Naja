@@ -16,12 +16,18 @@ Route::get('/admin', function () {return view('admin');});
 Route::get('/','Home_Controller@home');
 Route::get('/contact','Home_Controller@contactrr');
 Route::get('/design_goods','Home_Controller@design_goods');
-Route::get('/register','Home_Controller@register');
+Route::get('/registersignup','Home_Controller@registersignup');
+
 
 Route::get('/dashboard','Admin_Controller@admin');
-Route::get('/stock','Admin_Controller@admin');
+Route::get('/admin/stock/','Stock_Controller@stock');
 Route::get('/report','Admin_Controller@admin');
 Route::get('/export','Admin_Controller@admin');
+Route::get('/admin/addnewproduct/','Stock_Controller@addNewProduct');
+Route::post('/admin/addnewproduct/','Stock_Controller@addNewProduct');
+
+
+
 
 
 

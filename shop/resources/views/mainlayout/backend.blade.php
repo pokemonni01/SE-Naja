@@ -8,8 +8,8 @@
   <title>I Love Accessory - @yield('title')</title>
 
   <!-- Bootstrap -->
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="bootstrap/css/dashboard.css" rel="stylesheet">
+  <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../bootstrap/css/dashboard.css" rel="stylesheet">
 
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -21,18 +21,10 @@
     </head>
     <body>
 
-      @extends('admin.headbar')
-      @section('headbar')
-      @parent
-      @show
-
+      @include('admin.headbar')
       <div class="container-fluid">
       <div class="row">
-      @extends('admin.sidebar')
-      @section('sidebar')
-      @parent
-      @show
-
+      @include('admin.sidebar')
       <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
         @yield('content')
       </div>
@@ -42,8 +34,8 @@
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="bootstrap/js/backend.js"></script>
+      <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="../bootstrap/js/backend.js"></script>
 
     </body>
     </html>
