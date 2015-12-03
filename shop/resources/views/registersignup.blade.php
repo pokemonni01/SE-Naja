@@ -1,13 +1,8 @@
-<style type="text/css">
-body {
-	background-image: url(../../../../../../../Users/Lookbas/Desktop/bgbox.jpg);
-}
-</style>
 @extends('home')
 @section('content')
 <center>
     </center>
-ลงทะเบียน</H1>
+สมัครสมาชิก</H1>
           &nbsp; Username &nbsp; <input type="text" name="user_user" maxlength="20" > * <br /><br/>
         &nbsp; Password &nbsp; &nbsp;<input type="text" name="pass_user" maxlength="15"> * <br /><br/>
         &nbsp; Name &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <input type="text" name="name_user" value="" size="5" maxlength="30"/>&nbsp; * <br/><br/>

@@ -33,7 +33,7 @@
 	font-size: 24px;
 }
 body {
-	 background-image: url("/SE/bootstrap/image/Jp/bgbgbg.png");
+	 background-image: url("/SE/bootstrap/image/Jp/bgbgbg.jpg");
    background-repeat: no-repeat;
    background-position: center;
 background-attachment: fixed;
@@ -59,17 +59,19 @@ function MM_preloadImages() { //v3.0
        </td>
   </tr>
   <tr>
-    <td width="350" height="90" bgcolor="FFFFFF">
-      <center> 
-      @include('register1')
-    </center>
+    <td width="350" height="90" bgcolor="#fccede">
+      @include('register1') 
     <p></p>
   	@include('category')
     <style type="text/css">
 body {
-  background-color: #FFFFFF;
+  background-color: #FFFFFF; 
 }
 </style>
+    <p></p>
+<a href="https://www.facebook.com/ILoveAccessory/" style="margin:13px;" ><img width="220" height="85" src="/SE/bootstrap/image/Jp/facebook.jpg" alt="#000000"></a>
+<p></p>
+<a href="https://www.facebook.com/ILoveAccessory/" style="margin:13px;" ><img width="220" height="80" src="/SE/bootstrap/image/Jp/twitter.jpg" alt="#000000"></a>
   	<p>&nbsp;</p>
   	<p>&nbsp;</p>
   	<p>&nbsp;</p>
@@ -79,12 +81,16 @@ body {
   	<p>&nbsp;</p>
   	<p>&nbsp;</p>
   	<p>&nbsp;</p></td>
-    <td width="1080" bgcolor="#FFFFFF" class="size5"> กรอบตรงกลาง
-
-
+    <td width="1080" bgcolor="#FFFFFF">
+    <center>
+      <img width="740" height="820" src="/SE/bootstrap/image/Jp/home.png" class="img-rounded">
+    </center>
 <p>&nbsp;</p>
 @yield('content')
     <p>&nbsp;</p>    
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>

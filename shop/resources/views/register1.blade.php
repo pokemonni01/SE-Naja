@@ -15,7 +15,7 @@ background-color: #fc8cb4
                 <TR>
                   <p></p>
                 <center>
-                <p style="bold 20px;color:#ffffff">สมาชิก</p> 
+                <div style="bold 36px;color:#ffffff;"><h3>สมาชิก</h3></div> 
               </center>
                 <div  class="table-login">
                 <div class="form-group">
