@@ -3,7 +3,7 @@
         width: 140px;
     }
 </style>
-<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+<div class="modal fade" id="basicModal1" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -69,7 +69,7 @@
 
             <div class="form-group">
                 <div class="form-inline">
-                    <label for="exampleInputEmail1" class="label-input">รายละเอียดสินค้า</label>
+                    <label class="label-input">รายละเอียดสินค้า</label>
                     <textarea class="form-control" rows="5" name="product_detail"> </textarea>                
                 </div>
             </div>

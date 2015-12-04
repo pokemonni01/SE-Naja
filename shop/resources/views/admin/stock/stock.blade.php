@@ -3,24 +3,26 @@
 @section('title', 'Page Title')
 @section('content')
 <style type="text/css">
-    table {
-      table-layout: auto;
-      border-collapse: collapse;
-      width: 100%;
-    }
-    table td {
-      
-    }
-    table td.absorbing-column {
-      width: 100%;
+
 }
 </style>
-<h1 class="page-header">จัดการสินค้า <a class="btn btn-default"  href="#" data-toggle="modal" data-target="#basicModal" role="button">เพิ่มสินค้าใหม่ +</a></h1>
- @include('admin.stock.popUpAddNewProduct')
- <table class="table table-striped">
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    $("#checkAll").click(function() {
+      $('input:checkbox').not(this).prop('checked', this.checked);
+    });
+
+
+  });
+</script>
+@include('admin.stock.popUpAddNewProduct')
+<?php echo Form::open(array('url' => '/admin/removeproduct/','class'=>'form-horizontal', 'method' => 'post')); ?>
+<h1 class="page-header">จัดการสินค้า <a class="btn btn-default"  href="#" data-toggle="modal" data-target="#basicModal1" role="button">เพิ่มสินค้าใหม่ +</a> <button type="submit" class="btn btn-danger">ลบสินค้าที่เลือก</button> </h1>
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>#</th>
+      <th><input type="checkbox" id="checkAll"></th>
       <th><span class="glyphicon glyphicon-picture" aria-hidden="true"></span></th>
       <th>รหัสสินค้า</th>
       <th>ชื่อสินค้า</th>
@@ -34,12 +36,10 @@
     <?php
 
     for($i=0;$i<sizeof($result);$i++){
-      //$pos = strpos($result[$i]->product_ImagePath, '/shop');
-      //substr($result[$i]->product_ImagePath,$pos);
       echo "<tr>";
-      echo "<td>".($i+1)."</td>";
+      echo '<td><input type="checkbox" name ="'.$result[$i]->product_id.'"/></td>';
       echo '<td width="120px">'.'<img src="'.$result[$i]->product_ImagePath.'"class="img-thumbnail"></td>';
-      echo "<td>".$result[$i]->product_id."</td>";
+      echo '<td> <a href="#" data-toggle="modal" data-target="#basicModal1"> '.$result[$i]->product_id."</a></td>";
       echo "<td>".$result[$i]->product_name."</td>";
       echo "<td>".$result[$i]->product_type."</td>";
       echo "<td>".$result[$i]->product_price."</td>";
@@ -50,6 +50,7 @@
   </tbody>
 </table>
 </div>
+</form>
 @stop
 <?php /*
 @extends('mainlayout.backend')

@@ -45,6 +45,12 @@ class Stock_Controller extends Controller
 		return redirect('/admin/stock/');
 	}
 
+	public function removeProduct(){
+		$database = DB::table('product');//->where('votes', '<', 100)->delete();
+		print_r($_POST);
+		return; //redirect('/admin/stock/');
+	}
+
 }
 
 ?>
