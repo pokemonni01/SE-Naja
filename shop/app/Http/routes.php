@@ -23,6 +23,10 @@ Route::get('/admin/stock/','Stock_Controller@stock');
 Route::get('/report','Admin_Controller@admin');
 Route::get('/export','Admin_Controller@admin');
 Route::get('/admin/addnewproduct/','Stock_Controller@addNewProduct');
+//Route::post('/admin/addnewproduct/','Stock_Controller@addNewProduct');
+Route::post('/admin/addnewproduct/','Stock_Controller@addNewProduct');
+
+
 
 
 

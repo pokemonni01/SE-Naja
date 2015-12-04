@@ -7,6 +7,7 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use DB;
+use Storage;
 
 class Admin_Controller extends Controller
 {
@@ -16,7 +17,8 @@ class Admin_Controller extends Controller
 
 	public function stock(){
 		$results = DB::select('select * from customer ');
-		return view('admin.stock.stock',array('result'=>$results));
+		$storagePath  = Storage::disk('image')->getDriver()->getAdapter()->getPathPrefix();
+		return view('admin.stock.stock',array('result'=>$results,'storage'=>$storagePath));
 	}
 
 }
