@@ -32,10 +32,12 @@ body {
 </head>
 <center>
 <body onload="MM_preloadImages('bootstrap/image/Jp/cable2-1.png','bootstrap/image/Jp/cable2-2.png','bootstrap/image/Jp/middle1.png','bootstrap/image/Jp/middle2.png')">
-<div id="apDiv2"><img src="bootstrap/image/Jp/15792-illustration-of-a-blank-glossy-rectangular-button-pv.png" width="227" height="203" /></div>
+  <center>
+<div id="apDiv2"><img src="/SE/bootstrap/image/Jp/cart.png" width="277" height="253" /></div>
 </style>
 <link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
+
 body {
 	background-color: #92B1AB;
 }
