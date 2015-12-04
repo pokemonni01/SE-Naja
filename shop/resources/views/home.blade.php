@@ -41,35 +41,12 @@ body {
 background-attachment: fixed;
 }
 </style>
-
-
-<script type=”text/javascript” src=”js/jquery.js”></script>
-<script type=”text/javascript” src=”js/easySlider1.7.js”></script>
-<link href=”css/screen.css” rel=”stylesheet” type=”text/css” media=”screen” /><br />
-<script type=”text/javascript”>
-$(document).ready(function(){
-$(“#slider”).easySlider({
-auto: true,
-continuous: true
-});
-});
-</script>
-
-
-
 <script type="text/javascript">
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-
- $(function(){  
-    $('.carousel').carousel({
-  interval: 2000
-})
-});  
+    $(document).ready(function(){
+        $( @yield('activebar') ).attr("class","active");
+    });
 </script>
+<link href="css/screen.css" rel="stylesheet" type="text/css" media="screen" /><br />
 </head>
 <body>
   <center>
@@ -131,6 +108,6 @@ body {
 </center>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="boot/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

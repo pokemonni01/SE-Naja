@@ -1,4 +1,7 @@
 @extends('home')
+@section('activebar')
+"#contactus"
+@stop
 @section('content')
 <table width="700" border="0" style="float:right; margin:22px;">
   <tr>
