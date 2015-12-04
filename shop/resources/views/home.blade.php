@@ -1,21 +1,24 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>I LOVE ACCESSORIES</title>
 <style type="text/css">
 .size5 {
-  font-size: 36px;
-  text-align: left;
-  font-weight: bold;
+	font-size: 36px;
+	text-align: left;
+	font-weight: bold;
 }p {
-  margin-top: 0;
-  padding-right: 15px;
-  padding-left: 15px;
-  font-weight: bold;
-  text-align: left;
-  font-family: "DSU_Single";
-  font-size: 24px;
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-weight: bold;
+	text-align: left;
+	font-family: "DSU_Single";
+	font-size: 24px;
+}
+body {
+	background-color: #7CA3A0;
 }
 </style>
 <script type="text/javascript">
@@ -26,69 +29,55 @@ function MM_preloadImages() { //v3.0
 }
 </script>
 </head>
-<center>
 <body>
-<table width="986" height="971" border="1">
+<table width="986" height="971" border="0">
   <tr>
     <td height="409" colspan="2"><img src="bootstrap/image/Jp/black_widow_captain_america_the_winter_soldier-wide.jpg" width="974" height="402" /></td>
   </tr>
   <tr>
-    <td height="38" colspan="2" bgcolor="#FFFFFF"><center>
-      <center>
-      <nav>
-      <a href="http://localhost/SE">หน้าแรก</a>|
-      <a href="http://localhost/SE">วิธีการสั่งซื้อ</a>|
-      <a href="http://localhost/SE/design_goods">ออกแบบผลิตภัณฑ์</a>|
-      <a href="http://localhost/SE">แจ้งชำระเงิน</a>|
-      <a href="http://localhost/SE/contact">ติดต่อเรา</a>
-      
-      </nav>
-      </center>
-    </center></td>
+    <td height="38" colspan="2" bgcolor="#FFFFFF">
+
+    @include('header')
+       </td>
   </tr>
   <tr>
-    <td width="190" height="71" bgcolor="#ffffff">
-    
-    <HTML>
-        <Body>
-            
-            <FORM  METHOD="POST" ACTION="chkmemer.php">
-                <Table>
+    <td width="190" height="71" bgcolor="#FFFFFF"><p>&nbsp;</p>
+      <center> 
+        <FORM  METHOD="POST" ACTION="chkmemer.php">
+        <Table>
                 <TR>
 
                 <Title>: : Login : :</Title>
                 
                 
-                <TD><B>Username  : </B> </TD>
-                <TD><INPUT Name="user_reg" Type="text" size="15"></TD>
+                <TD width="77"><B>Username: </B> </TD>
+                <TD width="110"><INPUT Name="user_reg" Type="text" size="15"></TD>
                 </TR>
                 <TR>
-                <TD><B>Password  : </B></TD>
-                <TD><Input Name="pass_reg" Type="password" size="16"></TD>
+                <TD><B>Password: </B></TD>
+                <TD><Input Name="pass_reg" Type="password" size="15"></TD>
                 </TR>
-                </TABLE>
+          </TABLE>
 
-                <input type="button" name="login" id="login" value="เข้าสู่ระบบ" style = "background-color:transparent" onclick="window.location='login'" />
-
+                <input type="button" name="login" id="login" value="เข้าสู่ระบบ" style = "background-color:transparent" onclick="window.location.href='http://localhost/SE/register'" />
                 <input type="button" name="forget" id="forget" value="ลืมรหัสผ่าน" style = "background-color:transparent" onclick="window.location='register'" />
 
-                
-                <input type="button" name="register" id="login" value="ลงทะเบียน" style = "background-color:transparent" onclick="window.location='register'" />
-
-
-            </FORM>
-        </BODY>
-    </HTML>
-
-
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p></td>
-    <td width="780" bgcolor="#FFFFFF" class="size5"><p>รักนะค่ะ คนดีของฉัน</p>
+          <input type="button" name="register" id="login" value="ลงทะเบียน" style = "background-color:transparent" onclick="window.location.href='http://localhost/SE/register'" />
+      </FORM>
+    </center>
+  	<p>&nbsp;</p>
+  	<p>&nbsp;</p>
+  	<p>&nbsp;</p>
+  	<p>&nbsp;</p>
+  	<p>&nbsp;</p>
+  	<p>&nbsp;</p>
+  	<p>&nbsp;</p>
+  	<p>&nbsp;</p>
+  	<p>&nbsp;</p>
+  	<p>&nbsp;</p></td>
+    <td width="780" bgcolor="#FFFFFF" class="size5"><center>
+    </center>
+<p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
@@ -98,7 +87,17 @@ function MM_preloadImages() { //v3.0
     <p>&nbsp;</p></td>
   </tr>
   <tr>
-    <td height="47" colspan="2" bgcolor="#FFFFFF"><p>&nbsp;</p></td>
+    <td height="47" colspan="2" bgcolor="#FFFFFF">
+     <center>
+      <nav>
+      <a href="http://localhost/SE"> หน้าแรก</a> |
+      <a href="http://localhost/SE"> วิธีการสั่งซื้อ</a> |
+      <a href="http://localhost/SE/design_goods"> ออกแบบผลิตภัณฑ์</a> |
+      <a href="http://localhost/SE"> แจ้งชำระเงิน</a> |
+      <a href="http://localhost/SE/contact"> ติดต่อเรา</a>
+      
+      </nav>
+      </center>&nbsp;</td>
   </tr>
 </table>
 </body>

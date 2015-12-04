@@ -23,7 +23,6 @@ class Home_Controller extends Controller
 		return view('register');
 	}
 
-
 }
 
 ?>
