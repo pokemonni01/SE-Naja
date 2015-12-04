@@ -22,7 +22,15 @@ class Home_Controller extends Controller
 	public function registersignup(){
 		return view('registersignup');
 	}
-
+	public function contactus(){
+		return view('contactus');
+	}
+	public function howtopay(){
+		return view('howtopay');
+	}
+	public function detail_Goods(){
+		return view('detail_Goods');
+	}
 }
 
 ?>

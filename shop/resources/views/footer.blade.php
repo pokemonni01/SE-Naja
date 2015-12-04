@@ -1,6 +1,5 @@
 <tr>
     <td height="130" colspan="2" bgcolor="#fc72a3" href="">
-           
      <center>
       <p></p>
 <img width="60" height="60" src="/SE/bootstrap/image/Jp/logo2.png" class="img-rounded">

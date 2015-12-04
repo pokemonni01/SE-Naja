@@ -17,7 +17,9 @@ Route::get('/','Home_Controller@home');
 Route::get('/contact','Home_Controller@contactrr');
 Route::get('/design_goods','Home_Controller@design_goods');
 Route::get('/registersignup','Home_Controller@registersignup');
-
+Route::get('/contactus','Home_Controller@contactus');
+Route::get('/howtopay','Home_Controller@howtopay');
+Route::get('/detail_Goods','Home_Controller@detail_Goods');
 
 Route::get('/dashboard','Admin_Controller@admin');
 Route::get('/admin/stock/','Stock_Controller@stock');

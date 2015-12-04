@@ -9,6 +9,8 @@
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,19 +41,44 @@ body {
 background-attachment: fixed;
 }
 </style>
+
+
+<script type=”text/javascript” src=”js/jquery.js”></script>
+<script type=”text/javascript” src=”js/easySlider1.7.js”></script>
+<link href=”css/screen.css” rel=”stylesheet” type=”text/css” media=”screen” /><br />
+<script type=”text/javascript”>
+$(document).ready(function(){
+$(“#slider”).easySlider({
+auto: true,
+continuous: true
+});
+});
+</script>
+
+
+
 <script type="text/javascript">
 function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
+
+ $(function(){  
+    $('.carousel').carousel({
+  interval: 2000
+})
+});  
 </script>
 </head>
 <body>
   <center>
 <table width="986" height="971" border="0">
   <tr>
+    <input style="float:center;" type="text" name="s" id="s" class="search-query" placeholder="Search">
     <td height="409" colspan="2"><img src="/SE/bootstrap/image/Jp/bgilove.jpg" width="989" height="459" /></td>
+    
+    <p></p>
   </tr>
   <tr>
     <td height="38" colspan="2" bgcolor="#fccede">
@@ -60,7 +87,8 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
     <td width="350" height="90" bgcolor="#fccede">
-      @include('register1') 
+     <!-- @include('register1') -->
+      @include('login')
     <p></p>
   	@include('category')
     <style type="text/css">
@@ -72,37 +100,36 @@ body {
 <a href="https://www.facebook.com/ILoveAccessory/" style="margin:13px;" ><img width="220" height="85" src="/SE/bootstrap/image/Jp/facebook.jpg" alt="#000000"></a>
 <p></p>
 <a href="https://www.facebook.com/ILoveAccessory/" style="margin:13px;" ><img width="220" height="80" src="/SE/bootstrap/image/Jp/twitter.jpg" alt="#000000"></a>
-  	<p>&nbsp;</p>
-  	<p>&nbsp;</p>
-  	<p>&nbsp;</p>
-  	<p>&nbsp;</p>
-  	<p>&nbsp;</p>
-  	<p>&nbsp;</p>
-  	<p>&nbsp;</p>
-  	<p>&nbsp;</p>
-  	<p>&nbsp;</p></td>
-    <td width="1080" bgcolor="#FFFFFF">
+  	<p></p>
+<a href="https://www.facebook.com/ILoveAccessory/" style="margin:13px;" ><img width="220" height="80" src="/SE/bootstrap/image/Jp/line.jpg" alt="#000000"></a>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>      
+
+
+    </td>
+    <td width="1080" bgcolor="#FFFFFF" align="left" valign="top">
     <center>
-      <img width="740" height="820" src="/SE/bootstrap/image/Jp/home.png" class="img-rounded">
+      <!--<img width="740" height="820" src="/SE/bootstrap/image/Jp/home.png" class="img-rounded">-->
     </center>
-<p>&nbsp;</p>
 @yield('content')
-    <p>&nbsp;</p>    
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p></td>
+<p>&nbsp;</p>
+
+    </td>
   </tr>
   @include('footer')
 </table>
 </center>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="boot/js/bootstrap.min.js"></script>
 </body>
