@@ -26,6 +26,9 @@ Route::get('/export','Admin_Controller@admin');
 Route::get('/admin/addnewproduct/','Stock_Controller@addNewProduct');
 Route::post('/admin/addnewproduct/','Stock_Controller@addNewProduct');
 
+Route::post('/login','Home_Controller@login');
+Route::get('/logout','Home_Controller@logout');
+
 
 
 

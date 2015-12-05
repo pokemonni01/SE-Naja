@@ -60,7 +60,7 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
     <td width="350" height="90" bgcolor="#fccede">
-      @include('register1') 
+      @include('member') 
     <p></p>
   	@include('category')
     <style type="text/css">
