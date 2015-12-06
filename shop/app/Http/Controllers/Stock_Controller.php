@@ -83,7 +83,7 @@ class Stock_Controller extends Controller
             'status' => 'success',
             'msg' => 'Setting created successfully',
             'product_id' => $product->product_id,
-            'product_ImagePath' => $product->product_ImagePath
+            'product_imagePath' => $product->product_imagePath
     		,'product_name' => $product->product_name
     		,'product_type' => $product->product_type
     		,'product_remain' => $product->product_remain

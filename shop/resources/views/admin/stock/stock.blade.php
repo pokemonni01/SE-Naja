@@ -44,7 +44,7 @@
       echo '<td width="120px">'.'<img src="'.$result[$i]->product_imagePath.'"class="img-thumbnail"></td>';
       echo '<td> <a href="#" data-toggle="modal" data-target="#editProductModal" class="editProduct">'.$result[$i]->product_id."</a></td>";
       echo "<td>".$result[$i]->product_name."</td>";
-      echo "<td>".$pType[$i]->type_name.'('.$result[$i]->product_type.')'."</td>";
+      echo "<td>".$result[$i]->product_type."</td>";
       echo "<td>".$result[$i]->product_price."</td>";
       echo "<td>".$result[$i]->product_remain."</td>";
       echo "</tr>";

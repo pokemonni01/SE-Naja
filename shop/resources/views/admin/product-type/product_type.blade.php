@@ -1,4 +1,4 @@
-@extends('mainlayout.backend')
+@extends('mainlayout.adminpage')
 
 @section('title', 'Product Type')
 @section('content')

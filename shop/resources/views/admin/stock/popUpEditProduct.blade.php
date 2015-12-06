@@ -15,7 +15,7 @@
       },
       success: function(data){
         console.log(data);
-        $("#edit-product-show-image").attr('src',data.product_ImagePath);
+        $("#edit-product-show-image").attr('src',data.product_imagePath);
         $("#edit-product-image").attr('src',data.product_ImagePath);
         $("#edit-product-id").val(data.product_id);
         $("#edit-product-id-hidden").val(data.product_id);

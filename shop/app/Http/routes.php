@@ -38,6 +38,13 @@ Route::get('/admin/product-type/','ProductType_Controller@productType');
 Route::post('/admin/addnewproducttype/','ProductType_Controller@addNewProductType');
 Route::post('/admin/removeproducttype/','ProductType_Controller@removeProductType');
 
+Route::get('/admin/member/','ManageMember_Controller@member');
+
+Route::get('/admin/membertype/','MemberType_Controller@memberType');
+Route::post('/admin/addnewmemberstatus/','MemberType_Controller@addNewMemberStatus');
+Route::post('/admin/removememberstatus/','MemberType_Controller@removeMemberStatus');
+
+
 
 
 
