@@ -6,11 +6,12 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use DB;
 
 class Home_Controller extends Controller
 {
     public function home(){
-		return view('home');
+		return view('homeadvert');
 	}
 
 	public function contactrr(){
@@ -42,6 +43,14 @@ class Home_Controller extends Controller
 	}
 	public function adminadd(){
 		return view('adminadd');
+	}
+	public function categoryall(){
+		return view('categoryall');
+	}
+	public function allproduct(){
+		$watch=DB::table('product')->get();
+
+		return view('allproduct',array('watch'=>$watch));
 	}
 }
 

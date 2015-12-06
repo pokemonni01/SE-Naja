@@ -8,7 +8,7 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/se/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -62,7 +62,7 @@ background-attachment: fixed;
   </tr>
   <tr>
     <td width="350" height="90" bgcolor="#fccede" align="left" valign="top">
-     <!-- @include('register1') -->
+     <!--@include('register1') -->
       <!--@include('login')-->
       @include('loginadmin')
     <p></p>
@@ -78,16 +78,13 @@ body {
 <a href="https://www.twitter.com/" style="margin:13px;" ><img width="220" height="80" src="/SE/bootstrap/image/Jp/twitter.jpg" alt="#000000"></a>
   	<p></p>
 <a href="https://www.facebook.com/ILoveAccessory/" style="margin:13px;" ><img width="220" height="80" src="/SE/bootstrap/image/Jp/line.jpg" alt="#000000"></a>
-    <p>&nbsp;</p>
 
     </td>
     <td width="1080" bgcolor="#FFFFFF" align="left" valign="top">
-    <center>
-      <!--<img width="740" height="820" src="/SE/bootstrap/image/Jp/home.png" class="img-rounded">-->
-    </center>
-@yield('content')
-<p>&nbsp;</p>
 
+@yield('content')
+
+<p>&nbsp;</p>
     </td>
   </tr>
   @include('footer')
@@ -95,6 +92,6 @@ body {
 </center>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="/se/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

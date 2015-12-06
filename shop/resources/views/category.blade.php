@@ -4,8 +4,8 @@
       <p></p>
       <center><div style="color:#ffffff;"><h3>ประเภทสินค้า</h3></div></center>
       <ul>
-  <li><a align="left" href="detail_Goods" style="color:#ffffff">สินค้าทั้งหมด (9,890)</a><p></p></li>
-   <li><a align="left" href="/" style="color:#ffffff">สินค้ามาใหม่ (54)</a><p></p></li>
+  <li><a align="left" href="/se/categoryall" style="color:#ffffff">สินค้าทั้งหมด (9,890)</a><p></p></li>
+   <li><a align="left" href="categoryall" style="color:#ffffff">สินค้ามาใหม่ (54)</a><p></p></li>
    <li><a align="left" href="/" style="color:#ffffff">สินค้าแนะนำ (213)</a><p></p></li>
     <li> <a align="left" href="/" style="color:#ffffff">นาฬิกาข้อมือหญิง (456)</a><p></p></li>
      <li> <a align="left" href="/" style="color:#ffffff">นาฬิกาข้อมือชาย (345)</a><p></p></li>

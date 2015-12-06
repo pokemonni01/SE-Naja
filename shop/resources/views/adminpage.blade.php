@@ -56,15 +56,23 @@ background-attachment: fixed;
       @include('adminpageback')
     <p></p>
   	 <center>
-     <a href="adminadd" style="width:90%;height:60" type="button" class="btn btn-default"><h3>จัดการสินค้า</h3></a>
+      <div><h3>สินค้า</h3></div>
+     <a href="adminadd" style="width:90%;height:60" type="button" class="btn btn-default"><h4>จัดการสินค้า</h4></a>
      <p></p>
-      <a href="/se" style="width:90%;height:60px" type="button" class="btn btn-default"><h3>อัพเดทสินค้า</h3></a>
+     <a href="adminadd" style="width:90%;height:60" type="button" class="btn btn-default"><h4>จัดการประเภทสินค้า</h4></a>
+     <p></p>
+     <div><h3>ข้อมูลการขาย</h3></div>
+      <a href="/se" style="width:90%;height:60px" type="button" class="btn btn-default"><h4>จัดการการสั่งซื้อ</h4></a>
       <p></p>
-      <a href="/se" style="width:90%;height:60px" type="button" class="btn btn-default"><h3>อัพเดทโปรโมชั่น</h3></a>
+      <a href="/se" style="width:90%;height:60px" type="button" class="btn btn-default"><h4>จัดการสถานะการสั่งซื้อ</h4></a>
       <p></p>
-      <a href="/se" style="width:90%;height:60px" type="button" class="btn btn-default"><h3>ออกรายงาน</h3></a>
+      <div><h3>ข้อมูลการสมาชิก</h3></div>
+      <a href="/se" style="width:90%;height:60px" type="button" class="btn btn-default"><h4>จัดการสมาชิก</h4></a>
       <p></p>
-      <a href="/se" style="width:90%;height:60px" type="button" class="btn btn-default"><h3>ดูข้อมูลสมาชิก</h3></a>
+      <a href="/se" style="width:90%;height:60px" type="button" class="btn btn-default"><h4>จัดการสถานะสมาชิก</h4></a>
+      <p></p>
+      <div><h3>รายงาน</h3></div>
+      <a href="/se" style="width:90%;height:60px" type="button" class="btn btn-default"><h4>ออกรายงาน</h4></a>
       <p></p>
       <p>&nbsp;</p>
 <p>&nbsp;</p>
