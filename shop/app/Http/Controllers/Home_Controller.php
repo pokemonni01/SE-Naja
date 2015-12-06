@@ -31,6 +31,18 @@ class Home_Controller extends Controller
 	public function detail_Goods(){
 		return view('detail_Goods');
 	}
+	public function order(){
+		return view('order');
+	}
+	public function information(){
+		return view('information');
+	}
+	public function adminpage(){
+		return view('adminpage');
+	}
+	public function adminadd(){
+		return view('adminadd');
+	}
 }
 
 ?>

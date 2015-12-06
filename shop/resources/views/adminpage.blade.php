@@ -19,7 +19,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>I LOVE ACCESSORIES</title>
+<title>ADMIN I LOVE ACCESSORIES</title>
 <style type="text/css">
 .size5 {
 	font-size: 36px;
@@ -41,52 +41,52 @@ body {
 background-attachment: fixed;
 }
 </style>
-<script type="text/javascript">
- $(document).ready(function(){
-        $( @yield('activebar') ).attr("class","active");
-    });
-</script>
-<link href="css/screen.css" rel="stylesheet" type="text/css" media="screen" /><br />
-
 </head>
 <body>
   <center>
+  <!--<img width="989" height="88" src="/SE/bootstrap/image/Jp/header.jpg" class="img-rounded">-->
+  <tr><p style="color:#FFFFFF; bgcolor=""#fccede"><h2>สำหรับเจ้าหน้าที่เท่านั้น</h2></p></tr>
+</center>
+  <center>
 <table width="986" height="971" border="0">
   <tr>
-    <td height="459" colspan="2"><img src="/SE/bootstrap/image/Jp/bgilove.jpg" width="989" height="459" /></td>
-  </tr>
-  <tr>
-    <td height="38" colspan="2" bgcolor="#fccede">
-    @include('header')
-       </td>
-  </tr>
-  <tr>
-    <td width="350" height="90" bgcolor="#fccede" align="left" valign="top">
+    <td width="230" height="90" bgcolor="#fccede" align="left" valign="top">
      <!-- @include('register1') -->
       <!--@include('login')-->
-      @include('loginadmin')
+      @include('adminpageback')
     <p></p>
-  	@include('category')
+  	 <center>
+     <a href="adminadd" style="width:90%;height:60" type="button" class="btn btn-default"><h3>จัดการสินค้า</h3></a>
+     <p></p>
+      <a href="/se" style="width:90%;height:60px" type="button" class="btn btn-default"><h3>อัพเดทสินค้า</h3></a>
+      <p></p>
+      <a href="/se" style="width:90%;height:60px" type="button" class="btn btn-default"><h3>อัพเดทโปรโมชั่น</h3></a>
+      <p></p>
+      <a href="/se" style="width:90%;height:60px" type="button" class="btn btn-default"><h3>ออกรายงาน</h3></a>
+      <p></p>
+      <a href="/se" style="width:90%;height:60px" type="button" class="btn btn-default"><h3>ดูข้อมูลสมาชิก</h3></a>
+      <p></p>
+      <p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      </center>
     <style type="text/css">
 body {
   background-color: #FFFFFF; 
 }
 </style>
-    <p></p>
-<a href="https://www.facebook.com/ILoveAccessory/" style="margin:13px;" ><img width="220" height="85" src="/SE/bootstrap/image/Jp/facebook.jpg" alt="#000000"></a>
-<p></p>
-<a href="https://www.twitter.com/" style="margin:13px;" ><img width="220" height="80" src="/SE/bootstrap/image/Jp/twitter.jpg" alt="#000000"></a>
-  	<p></p>
-<a href="https://www.facebook.com/ILoveAccessory/" style="margin:13px;" ><img width="220" height="80" src="/SE/bootstrap/image/Jp/line.jpg" alt="#000000"></a>
-    <p>&nbsp;</p>
 
     </td>
     <td width="1080" bgcolor="#FFFFFF" align="left" valign="top">
     <center>
       <!--<img width="740" height="820" src="/SE/bootstrap/image/Jp/home.png" class="img-rounded">-->
     </center>
-@yield('content')
-<p>&nbsp;</p>
+@yield('contents')
+
 
     </td>
   </tr>
@@ -95,6 +95,6 @@ body {
 </center>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="boot/js/bootstrap.min.js"></script>
 </body>
 </html>

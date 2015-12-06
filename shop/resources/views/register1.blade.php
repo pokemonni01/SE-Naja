@@ -7,7 +7,6 @@ background-color: #fc8cb4
 }
 </style>
 <table width="245" border="0">
-
   <tr>
     <td width="230" height="240">
   <FORM  METHOD="POST" ACTION="chkmemer.php">
@@ -34,7 +33,7 @@ background-color: #fc8cb4
                 <p></p>
                 <button class="btn btn-default" type="submit" style = "background-color:tranparent" onclick="window.location.href='register'">สมัครสมาชิก</button>
       </FORM>
-      <p></p>
+      <p></p> 
 </td>
   </tr>
 </table>

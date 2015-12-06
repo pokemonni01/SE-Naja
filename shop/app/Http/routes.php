@@ -20,6 +20,10 @@ Route::get('/registersignup','Home_Controller@registersignup');
 Route::get('/contactus','Home_Controller@contactus');
 Route::get('/howtopay','Home_Controller@howtopay');
 Route::get('/detail_Goods','Home_Controller@detail_Goods');
+Route::get('/order','Home_Controller@order');
+Route::get('/information','Home_Controller@information');
+Route::get('/adminpage','Home_Controller@adminpage');
+Route::get('/adminadd','Home_Controller@adminadd');
 
 Route::get('/dashboard','Admin_Controller@admin');
 Route::get('/admin/stock/','Stock_Controller@stock');

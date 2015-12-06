@@ -19,11 +19,7 @@ background-color: #fc8cb4
                  <p></p>
                 <div style="bold 36px;color:#ffffff;"><h5>ยินดีต้อนรับ</h5></div> 
                 <div style="bold 36px;color:#ffffff;"><h4>คุณศรายุทธ  กองเป็ง</h4></div> 
-                <a href="information" style="width:70%;height:45px" type="button" class="btn btn-default">ข้อมูลส่วนตัว</a>
-                <p></p>
-                <a href="order" style="width:70%;height:45px;float:center" type="button" class="btn btn-default">รายการสั่งซื้อ</a>
-                <p></p>
-                <a style="width:70%;height:45px" type="button" class="btn btn-default">เช็คสถานะการจัดส่ง</a>
+                <a href="adminpage" style="width:70%;height:45px" type="button" class="btn btn-default">เข้าสู่ระบบหลังร้าน</a>
                 <p></p>
                 <a style="width:70%;height:45px" type="button" class="btn btn-default">ออกจากระบบ</a>
                 <p></p>
@@ -38,6 +34,3 @@ background-color: #fc8cb4
 </td>
   </tr>
 </table>
-
-
- 

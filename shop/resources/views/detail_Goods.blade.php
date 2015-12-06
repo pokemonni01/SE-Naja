@@ -9,7 +9,7 @@
                 <p></p>
       <img width="300" height="360" src="/SE/bootstrap/image/Jp/clock.png" class="img-rounded">
               </center>
-                <div style="bold 36px;color:#ffffff;margin:20px">นาฬิกาข้อมือผู้ชาย CASIO G-SHOCK LIMITEDMODELS รุ่น GD-120CS-1 นาฬิกาข้อมือสำหรับผู้ชายสายเรซิ่น แข็งแรงทนทาน 
+                <div style="bold 36px;color:#ffffff;margin:20px" >นาฬิกาข้อมือผู้ชาย CASIO G-SHOCK LIMITEDMODELS รุ่น GD-120CS-1 นาฬิกาข้อมือสำหรับผู้ชายสายเรซิ่น แข็งแรงทนทาน 
 นาฬิการุ่นใหม่นี้พัฒนามาจากรุ่น GD-120 ซึ่งมีตัวเรือนขนาดใหญ่ คอลเลคชันการผสมผสานสีสันที่ฉูดฉาดเข้าด้วยกันช่วยสร้างงานออกแบบที่โดดเด่นสะดุดตา หน้าปัดดิจิตอลที่เรืองแสงในที่มืดของ GD-120CS ให้ดีไซน์หน้าปัดที่เท่และแปลกใหม่ เข้ากันได้ดีกับสีสันสวยสดของตัวเรือน 
 • การแสดงเวลาหลายแห่ง (Multi Time): แสดงและสับเปลี่ยนเวลาของเมืองต่างๆ ได้สูงสุดถึงสี่เมือง
 • ตัวเรืองแสงโดดเด่น หลอดไฟ LED ให้แสงพื้นหลังอัตโนมัติแบบความสว่างสูง
@@ -38,7 +38,7 @@
               </center>
               <center>
                 <div style="bold 36px;color:#00a42b;"><h4>  ขาย 3,090.00 บาท</h4></div>
-                 <button class="btn btn-default" type="submit" style = "background-color:tranparent;margin:10px" onclick="window.location.href='register'">ย้อนกลับ</button>
+                 <button class="btn btn-default" type="submit" style = "background-color:tranparent;margin:10px" onclick="window.location.href='/'">ย้อนกลับ</button>
               </center>
               </td>
   </tr>
