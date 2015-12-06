@@ -8,7 +8,7 @@
   <ul class="nav nav-sidebar">
     <li> <div class="menu-name">สินค้า</div></li>
     <li><a href="stock">จัดการสินค้า</a></li>
-    <li><a href="stock">จัดการประเภทสินค้า</a></li>
+    <li><a href="product-type">จัดการประเภทสินค้า</a></li>
   </ul>
   <ul class="nav nav-sidebar">
     <li> <div class="menu-name">ข้อมูลการขาย</div></li>

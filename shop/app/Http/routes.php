@@ -34,6 +34,10 @@ Route::post('/admin/removeproduct/','Stock_Controller@removeProduct');
 Route::post('/admin/getproduct/','Stock_Controller@getProduct');
 Route::post('/admin/editproduct/','Stock_Controller@editProduct');
 
+Route::get('/admin/product-type/','ProductType_Controller@productType');
+Route::post('/admin/addnewproducttype/','ProductType_Controller@addNewProductType');
+Route::post('/admin/removeproducttype/','ProductType_Controller@removeProductType');
+
 
 
 
