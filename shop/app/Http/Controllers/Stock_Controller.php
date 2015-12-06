@@ -9,25 +9,23 @@ use DB;
 use Storage;
 use Form;
 use Input;
-use Intervention\Image\ImageManagerStatic as Image;
+use Response;
 class Stock_Controller extends Controller
 {
 	public function stock(){
 		$results = DB::select('select * from product');
-		$storagePath  = starts_with(storage_path(),'se');//Storage::disk('local')->getDriver()->getAdapter()->getPathPrefix();
-		
+		$storagePath  = starts_with(storage_path(),'se');
 		return view('admin.stock.stock',array('result'=>$results,'storage'=>$storagePath));
 	}
 
 	public function addNewProduct(){
-		$results = DB::select('select * from customer ');
 		$product = array("product_sku","product_ImagePath","product_name","product_type","product_remain","product_price","product_detail");
 		if( empty($_POST['product_name']) ){
 			$post = 1;
 			//ไม่ได้
 		}
 		$image = Input::file('product_ImagePath');
-        $fileName  = time() . '.' . $image->getClientOriginalExtension();
+        $fileName  = $_POST['product_id'] . '.' . $image->getClientOriginalExtension();
         $pathImage = storage_path('app/');
  		$image->move($pathImage, $fileName);
  		$pos = strpos($pathImage.$fileName, '/se');
@@ -46,9 +44,54 @@ class Stock_Controller extends Controller
 	}
 
 	public function removeProduct(){
-		$database = DB::table('product');//->where('votes', '<', 100)->delete();
-		print_r($_POST);
-		return; //redirect('/admin/stock/');
+		$delArray = $_POST;
+		$sizeArray = sizeof($delArray);
+		for($i=0;$i<$sizeArray;$i++){
+			$database = DB::table('product');
+			$index = array_search("on",$delArray);
+			$database->where('product_id',$index)->delete();
+			unset($delArray[$index]);
+		}
+		return redirect('/admin/stock/');
+	}
+
+	public function editProduct(){
+		$product_id = Input::get('product_id');
+		$product_ImagePath = Input::get('product_ImagePath');
+		$product_name = Input::get('product_name');
+		//$product_type = Input::get('product_type');
+		$product_remain = Input::get('product_remain');
+		$product_price = Input::get('product_price');
+		$product_detail = Input::get('product_detail');
+		DB::table('product')
+            ->where('product_id', $product_id)
+            ->update([
+            	'product_name' => $product_name,
+            	//'product_ImagePath' => $product_ImagePath,
+            	//'product_type' => $product_type,
+            	'product_remain' => $product_remain,
+            	'product_price' => $product_price,
+            	'product_detail' => $product_detail,
+            	]);
+        return redirect('/admin/stock/');
+	}
+
+	public function getProduct(){
+		$product_id = Input::get('product_id');
+		$product = DB::table('product')->where('product_id', $product_id)->first();
+		 $response = array(
+            'status' => 'success',
+            'msg' => 'Setting created successfully',
+            'product_id' => $product->product_id,
+            'product_ImagePath' => $product->product_ImagePath
+    		,'product_name' => $product->product_name
+    		,'product_type' => $product->product_type
+    		,'product_remain' => $product->product_remain
+    		,'product_price' => $product->product_price
+    		,'product_detail' => $product->product_detail
+        );
+		//return "test";
+        return Response::json($response);  // <<<<<<<<< see this line
 	}
 
 }

@@ -10,7 +10,11 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
+Route::filter('csrf', function() {
+    $token = Request::ajax() ? Request::header('X-CSRF-Token') : Input::get('_token');
+    if (Session::token() != $token)
+        throw new Illuminate\Session\TokenMismatchException;
+});
 //Route::get('/', function () {return view('home');});
 Route::get('/admin', function () {return view('admin');});
 Route::get('/','Home_Controller@home');
@@ -26,6 +30,12 @@ Route::get('/admin/addnewproduct/','Stock_Controller@addNewProduct');
 //Route::post('/admin/addnewproduct/','Stock_Controller@addNewProduct');
 Route::post('/admin/addnewproduct/','Stock_Controller@addNewProduct');
 Route::post('/admin/removeproduct/','Stock_Controller@removeProduct');
+
+Route::post('/admin/getproduct/','Stock_Controller@getProduct');
+Route::post('/admin/editproduct/','Stock_Controller@editProduct');
+
+
+
 
 
 

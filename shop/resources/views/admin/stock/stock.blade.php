@@ -4,7 +4,6 @@
 @section('content')
 <style type="text/css">
 
-}
 </style>
 <script type="text/javascript">
   $(document).ready(function(){
@@ -13,10 +12,14 @@
       $('input:checkbox').not(this).prop('checked', this.checked);
     });
 
+    $.ajaxSetup({
+   headers: {'X-CSRF-Token': $('meta[name=csrf_token]').attr('content')}
+});
 
   });
 </script>
 @include('admin.stock.popUpAddNewProduct')
+@include('admin.stock.popUpEditProduct')
 <?php echo Form::open(array('url' => '/admin/removeproduct/','class'=>'form-horizontal', 'method' => 'post')); ?>
 <h1 class="page-header">จัดการสินค้า <a class="btn btn-default"  href="#" data-toggle="modal" data-target="#basicModal1" role="button">เพิ่มสินค้าใหม่ +</a> <button type="submit" class="btn btn-danger">ลบสินค้าที่เลือก</button> </h1>
 <table class="table table-striped">
@@ -37,9 +40,9 @@
 
     for($i=0;$i<sizeof($result);$i++){
       echo "<tr>";
-      echo '<td><input type="checkbox" name ="'.$result[$i]->product_id.'"/></td>';
+      echo '<td><input type="checkbox" name="'.$result[$i]->product_id.'"/></td>';
       echo '<td width="120px">'.'<img src="'.$result[$i]->product_ImagePath.'"class="img-thumbnail"></td>';
-      echo '<td> <a href="#" data-toggle="modal" data-target="#basicModal1"> '.$result[$i]->product_id."</a></td>";
+      echo '<td> <a href="#" data-toggle="modal" data-target="#editProductModal" class="editProduct">'.$result[$i]->product_id."</a></td>";
       echo "<td>".$result[$i]->product_name."</td>";
       echo "<td>".$result[$i]->product_type."</td>";
       echo "<td>".$result[$i]->product_price."</td>";
