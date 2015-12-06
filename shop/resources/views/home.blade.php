@@ -49,6 +49,7 @@ background-attachment: fixed;
 <link href="css/screen.css" rel="stylesheet" type="text/css" media="screen" /><br />
 </head>
 <body>
+@include('basket')
   <center>
 <table width="986" height="971" border="0">
   <tr>
