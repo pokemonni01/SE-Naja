@@ -1,4 +1,4 @@
-@extends('mainlayout.backend')
+@extends('mainlayout.adminpage')
 
 @section('title', 'Manage Stock')
 @section('content')
