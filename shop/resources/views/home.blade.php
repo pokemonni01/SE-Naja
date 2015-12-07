@@ -8,7 +8,8 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/se/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="csrf_token" content="{{ csrf_token() }}" />
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -42,21 +43,19 @@ background-attachment: fixed;
 }
 </style>
 <script type="text/javascript">
-    $(document).ready(function(){
+ $(document).ready(function(){
         $( @yield('activebar') ).attr("class","active");
     });
 </script>
 <link href="css/screen.css" rel="stylesheet" type="text/css" media="screen" /><br />
+
 </head>
 <body>
 @include('basket')
   <center>
 <table width="986" height="971" border="0">
   <tr>
-    <input style="float:center;" type="text" name="s" id="s" class="search-query" placeholder="Search">
-    <td height="409" colspan="2"><img src="/SE/bootstrap/image/Jp/bgilove.jpg" width="989" height="459" /></td>
-    
-    <p></p>
+    <td height="459" colspan="2"><img src="/SE/bootstrap/image/Jp/bgilove.jpg" width="989" height="459" /></td>
   </tr>
   <tr>
     <td height="38" colspan="2" bgcolor="#fccede">
@@ -64,9 +63,10 @@ background-attachment: fixed;
        </td>
   </tr>
   <tr>
-    <td width="350" height="90" bgcolor="#fccede">
-     <!-- @include('register1') -->
-      @include('login')
+    <td width="350" height="90" bgcolor="#fccede" align="left" valign="top">
+     <!--@include('register1') -->
+      <!--@include('login')-->
+      @include('loginadmin')
     <p></p>
   	@include('category')
     <style type="text/css">
@@ -77,31 +77,16 @@ body {
     <p></p>
 <a href="https://www.facebook.com/ILoveAccessory/" style="margin:13px;" ><img width="220" height="85" src="/SE/bootstrap/image/Jp/facebook.jpg" alt="#000000"></a>
 <p></p>
-<a href="https://www.facebook.com/ILoveAccessory/" style="margin:13px;" ><img width="220" height="80" src="/SE/bootstrap/image/Jp/twitter.jpg" alt="#000000"></a>
+<a href="https://www.twitter.com/" style="margin:13px;" ><img width="220" height="80" src="/SE/bootstrap/image/Jp/twitter.jpg" alt="#000000"></a>
   	<p></p>
 <a href="https://www.facebook.com/ILoveAccessory/" style="margin:13px;" ><img width="220" height="80" src="/SE/bootstrap/image/Jp/line.jpg" alt="#000000"></a>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>      
-
 
     </td>
     <td width="1080" bgcolor="#FFFFFF" align="left" valign="top">
-    <center>
-      <!--<img width="740" height="820" src="/SE/bootstrap/image/Jp/home.png" class="img-rounded">-->
-    </center>
-@yield('content')
-<p>&nbsp;</p>
 
+@yield('content')
+
+<p>&nbsp;</p>
     </td>
   </tr>
   @include('footer')
@@ -109,6 +94,6 @@ body {
 </center>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="/se/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

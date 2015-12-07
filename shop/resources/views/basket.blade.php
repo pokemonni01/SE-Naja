@@ -22,7 +22,13 @@
 </style>
 <div class="basket">
 	<div class="body-basket">
+		<a>
 		<label> สินค้าในตะกร้า </label>
-		<label> <a>0</a> ชิ้น <a>0</a> ชนิด</label>
+		<?php
+			$amount = $_SESSION['productInCart']['product_total'];
+			$protype = sizeof($_SESSION['productInCart'])-1;
+			echo '<label id="basket-detail">'.$amount.' ชิ้น '.$protype.' ชนิด</label>'
+		?>
+		</a>
 	</div>
 </div>

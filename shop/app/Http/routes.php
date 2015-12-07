@@ -19,7 +19,13 @@ Route::get('/design_goods','Home_Controller@design_goods');
 Route::get('/registersignup','Home_Controller@registersignup');
 Route::get('/contactus','Home_Controller@contactus');
 Route::get('/howtopay','Home_Controller@howtopay');
-Route::get('/detail_Goods','Home_Controller@detail_Goods');
+Route::get('/categoryall/allproduct/detail_Goods','Home_Controller@detail_Goods');
+Route::get('/order','Home_Controller@order');
+Route::get('/information','Home_Controller@information');
+Route::get('/adminpage','Home_Controller@adminpage');
+Route::get('/adminadd','Home_Controller@adminadd');
+Route::get('/categoryall','Home_Controller@categoryall');
+Route::get('/categoryall/allproduct','Home_Controller@allproduct');
 
 Route::get('/dashboard','Admin_Controller@admin');
 Route::get('/admin/stock/','Stock_Controller@stock');
@@ -27,6 +33,8 @@ Route::get('/report','Admin_Controller@admin');
 Route::get('/export','Admin_Controller@admin');
 Route::get('/admin/addnewproduct/','Stock_Controller@addNewProduct');
 Route::post('/admin/addnewproduct/','Stock_Controller@addNewProduct');
+
+Route::post('/add2cart/','Order_Controller@add2cart');
 
 
 
