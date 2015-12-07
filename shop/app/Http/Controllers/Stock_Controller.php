@@ -29,6 +29,8 @@ class Stock_Controller extends Controller
         $pathImage = storage_path('app/');
  		$image->move($pathImage, $fileName);
  		$pos = strpos($pathImage.$fileName, '/se');
+ 		if($pos===false)
+ 			$pos = strpos($pathImage.$fileName, '/SE');
  		$pathImage =substr($pathImage.$fileName,$pos);
 		DB::table('product')->insert(
     		[

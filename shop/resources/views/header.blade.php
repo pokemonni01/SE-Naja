@@ -1,12 +1,9 @@
-<center>
-       <center>
-      <nav>
-      <a href="http://localhost/SE"> หน้าแรก</a> |
-      <a href="http://localhost/SE"> วิธีการสั่งซื้อ</a> |
-      <a href="http://localhost/SE/design_goods"> ออกแบบผลิตภัณฑ์</a> |
-      <a href="http://localhost/SE"> แจ้งชำระเงิน</a> |
-      <a href="http://localhost/SE/contact"> ติดต่อเรา</a>
-      
-      </nav>
-      </center>
-    </center>
+ <center>
+<ul class="nav nav-tabs">
+ <li style="width:20%;height:51px;color:#ffffff" role="presentation" id="home"><a  href="/se/">Home</a></li>
+  <li style="width:20%;color:#ffffff" role="presentation"  id="designgood"><a href="design_goods">ออกแบบผลิตภัณฑ์</a></li>
+  <li style="width:20%;color:#ffffff" role="presentation"  id="howtopay"><a href="/se/howtopay">วิธีการสั่งซื้อ</a></li>
+  <li style="width:20%;color:#ffffff" role="presentation"  id="home"><a href="/SE/design_goods">แจ้งชำระเงิน</a></li>
+  <li style="width:20%;color:#ffffff" role="presentation"  id="contactus"><a href="/se/contactus">ติดต่อเรา</a></li>
+</ul>
+ </center>
