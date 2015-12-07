@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="/se/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="csrf_token" content="{{ csrf_token() }}" />
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -50,6 +51,9 @@ background-attachment: fixed;
 
 </head>
 <body>
+<?php if( isset($_SESSION['member_status']) ){ ?>
+@include('basket')
+<?php }?>
   <center>
 <table width="986" height="971" border="0">
   <tr>
@@ -62,9 +66,7 @@ background-attachment: fixed;
   </tr>
   <tr>
     <td width="350" height="90" bgcolor="#fccede" align="left" valign="top">
-     <!--@include('register1') -->
-      <!--@include('login')-->
-      @include('loginadmin')
+      @include('login.member')
     <p></p>
   	@include('category')
     <style type="text/css">

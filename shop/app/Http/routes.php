@@ -16,7 +16,9 @@ Route::get('/admin', function () {return view('admin');});
 Route::get('/','Home_Controller@home');
 Route::get('/contact','Home_Controller@contactrr');
 Route::get('/design_goods','Home_Controller@design_goods');
-Route::get('/registersignup','Home_Controller@registersignup');
+Route::get('/register','Home_Controller@register');
+Route::post('/register','Home_Controller@submit');
+Route::get('/eula','Home_Controller@eula');
 Route::get('/contactus','Home_Controller@contactus');
 Route::get('/howtopay','Home_Controller@howtopay');
 Route::get('/categoryall/allproduct/detail_Goods','Home_Controller@detail_Goods');
@@ -47,6 +49,9 @@ Route::get('/admin/membertype/','MemberType_Controller@memberType');
 //MemberType
 Route::post('/admin/addnewmemberstatus/','MemberType_Controller@addNewMemberStatus');
 Route::post('/admin/removememberstatus/','MemberType_Controller@removeMemberStatus');
+//Login
+Route::post('/login','Login_Controller@login');
+Route::get('/logout','Login_Controller@logout');
 
 
 
