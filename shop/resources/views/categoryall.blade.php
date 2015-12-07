@@ -10,7 +10,7 @@
 <table width="240" border="0"style="float:center">
 <br>
 <center>
-    <a border="1"href="/se/categoryall/T00" ><img src="/SE/bootstrap/image/Jp/clocksort.jpg" width="700" height="180" style="margin:20px;float:center;"></a>
+    <a href="/se/watchchoosesex" ><img src="/SE/bootstrap/image/Jp/clocksort.jpg" width="700" height="180" style="margin:20px;float:center;"></a>
     <tr><a href="/se/categoryall/T01"><img src="/SE/bootstrap/image/Jp/ringsort.jpg" width="700" height="180" style="margin:20px;float:center;"></a></tr>
     <tr><a href="categoryall/allproduct"><img src="/SE/bootstrap/image/Jp/earring.jpg" width="700" height="180" style="margin:20px;float:center;" ></a></tr>
     <tr><a href="categoryall/allproduct"><img src="/SE/bootstrap/image/Jp/kamlai.jpg" width="700" height="180" style="margin:20px;float:center;" ></a></tr>
