@@ -20,7 +20,7 @@ background-color: #fc8cb4
                 <div  class="table-login">
                 <div class="form-group">
     <label style="bold 16px;color:#ffffff" for="exampleInputEmail1">ชื่อผู้ใช้</label>
-    <input type="email" class="form-control" name="username" placeholder="Username">
+    <input type="text" class="form-control" name="username" placeholder="Username">
   </div>
   <div class="form-group">
     <label style="bold 16px;color:#ffffff" for="exampleInputPassword1">รหัสผ่าน</label>
@@ -29,8 +29,8 @@ background-color: #fc8cb4
                 </TR>
           </TABLE>
           <center>
-                <button class="btn btn-default" type="submit" style = "background-color:tranparent" onclick="window.location.href='register'">เข้าสู่ระบบ</button>
-                <button class="btn btn-default" type="button" style = "background-color:tranparent" onclick="window.location.href='register'">ลืมรหัสผ่าน</button>
+                <button class="btn btn-default" type="submit" style = "background-color:tranparent">เข้าสู่ระบบ</button>
+                <button class="btn btn-default" type="button" style = "background-color:tranparent" onclick="window.location.href='forget'">ลืมรหัสผ่าน</button>
                 <p></p>
                 <button class="btn btn-default" type="button" style = "background-color:tranparent" onclick="window.location.href='register'">สมัครสมาชิก</button>
       </form>

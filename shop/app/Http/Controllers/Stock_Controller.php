@@ -10,8 +10,16 @@ use Storage;
 use Form;
 use Input;
 use Response;
+
 class Stock_Controller extends Controller
 {
+
+		public function print1(){
+		return view('print1');
+	}
+	public function report1(){
+		return view('report1');
+	}
 	public function stock(){
 		$results = DB::table('product')->get();
 		$pType = DB::table('product_type')->get();

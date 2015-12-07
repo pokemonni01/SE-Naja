@@ -22,7 +22,6 @@
   </ul>
   <ul class="nav nav-sidebar">
     <li> <div class="menu-name">รายงาน</div></li>
-    <li><a href="stock">ออกรายงาน</a></li>
-    <li><a href="stock">จัดการสถานะสมาชิก</a></li>
+    <li><a href="report1">ออกรายงาน</a></li>
   </ul>
 </div>

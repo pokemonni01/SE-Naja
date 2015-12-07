@@ -10,28 +10,28 @@
               <center>
               <table width="650px" height="120px" border="0"style="color:#fccede;">
                 <tr>
-                  <td width="240px" height="50px" style="bold;color:#000000;" bgcolor="#fccede"><div style="bold;font-size:20px;float:right">ชื่อ :</div></td> 
-                  <td  style="color:#000000;" bgcolor="#fccede">จุฑารัตน์  พิมชะนก</td>
+                  <td width="240px" height="50px" style="bold;color:#000000;" bgcolor="#fccede"><div style="bold;font-size:20px;float:right">ชื่อ :&nbsp;</div></td> 
+                  <td  style="color:#000000;" bgcolor="#fccede">{{$member->member_name}}  {{$member->member_lastname}}</td>
                 </tr>
                <tr>
-                 <td width="150px" height="50px" style="bold;color:#000000;" bgcolor="#fccede"><div style="bold;font-size:20px;float:right">ชื่อผู้ใช้ :</div></td>
-                  <td  style="color:#000000;" bgcolor="#fccede">mewjuju</td>
+                 <td width="150px" height="50px" style="bold;color:#000000;" bgcolor="#fccede"><div style="bold;font-size:20px;float:right">ชื่อผู้ใช้ :&nbsp;</div></td>
+                  <td  style="color:#000000;" bgcolor="#fccede">{{$member->member_username}}</td>
                 </tr>
                 <tr>
-                 <td width="150px" height="50px" style="bold;color:#000000;" bgcolor="#fccede"><div style="bold;font-size:20px;float:right">E-mail :</div></td> 
-                  <td  style="color:#000000;" bgcolor="#fccede">sarayutbas@outlook.com</td>
+                 <td width="150px" height="50px" style="bold;color:#000000;" bgcolor="#fccede"><div style="bold;font-size:20px;float:right">E-mail :&nbsp;</div></td> 
+                  <td  style="color:#000000;" bgcolor="#fccede">{{$member->member_email}}</td>
                 </tr>
                 <tr>
-                  <td width="150px" height="50px" style="bold;color:#000000;" bgcolor="#fccede"><div style="bold;font-size:20px;float:right">ที่อยู่ :</div></td>
-                  <td  style="color:#000000;" bgcolor="#fccede">45/26 ม.5 ต.ลำลูกกา อ.ลำลูกกา จ.ปทุมธานี 12150</td>
+                  <td width="150px" height="50px" style="bold;color:#000000;" bgcolor="#fccede"><div style="bold;font-size:20px;float:right">ที่อยู่ :&nbsp;</div></td>
+                  <td  style="color:#000000;" bgcolor="#fccede">{{$member->member_address}}</td>
                 </tr>
                 <tr>
-                  <td width="150px" height="50px" style="bold;color:#000000;" bgcolor="#fccede"><div style="bold;font-size:20px;float:right">วันเกิด :</div></td>
-                  <td  style="color:#000000;" bgcolor="#fccede">13 สิงหาคม 2537</td>
+                  <td width="150px" height="50px" style="bold;color:#000000;" bgcolor="#fccede"><div style="bold;font-size:20px;float:right">วันเกิด :&nbsp;</div></td>
+                  <td  style="color:#000000;" bgcolor="#fccede">{{$member->member_birthday}}</td>
                 </tr>
                  <tr>
-                  <td width="150px" height="50px" style="bold;color:#000000;" bgcolor="#fccede"><div style="bold;font-size:20px;float:right">เบอร์โทรศัพท์ :</div></td>
-                  <td  style="color:#000000;" bgcolor="#fccede">084-0949996</td>
+                  <td width="150px" height="50px" style="bold;color:#000000;" bgcolor="#fccede"><div style="bold;font-size:20px;float:right">เบอร์โทรศัพท์ :&nbsp;</div></td>
+                  <td  style="color:#000000;" bgcolor="#fccede">{{$member->member_telephone}}</td>
                 </tr>
                  </tr>
                 </table>

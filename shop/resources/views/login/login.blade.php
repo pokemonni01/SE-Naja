@@ -18,15 +18,13 @@ $member = DB::table('member')->where('member_id', $_SESSION['member_id'])->first
                   <p></p>
                 <center>
                 <div style="bold 36px;color:#ffffff;"><h2>สมาชิก</h2></div> 
-                <img width="200" height="200" src="/SE/bootstrap/image/Jp/facebook.jpg" class="img-circle">
+                <img width="200" height="200" src="/SE/bootstrap/image/Jp/profile.jpg" class="img-circle">
                  <p></p>
                 <div style="bold 36px;color:#ffffff;">ยินดีต้อนรับ</div> 
                 <div style="bold 36px;color:#ffffff;"><h4>คุณ<?php echo $member->member_name.'   '.$member->member_lastname; ?></h4></div> 
-                <button style="width:70%;height:45px" type="button" class="btn btn-default">ข้อมูลส่วนตัว</button>
+                <a href="/se/information" style="width:70%;height:45px" type="button" class="btn btn-default">ข้อมูลส่วนตัว</a>
                 <p></p>
-                <button style="width:70%;height:45px" type="button" class="btn btn-default">รายการสั่งซื้อ</button>
-                <p></p>
-                <button style="width:70%;height:45px" type="button" class="btn btn-default">เช็คสถานะการจัดส่ง</button>
+                <a href="/se/order" style="width:70%;height:45px" type="button" class="btn btn-default">รายการสั่งซื้อ</a>
                 <p></p>
                 <a style="width:70%;height:45px" class="btn btn-default" href="/se/logout">ออกจากระบบ</a>
                 <p></p>

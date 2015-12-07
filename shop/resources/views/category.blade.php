@@ -19,12 +19,12 @@
     <?php
       echo '<li> <a align="left" href="/se/categoryall/T00" style="color:#ffffff">นาฬิกาข้อมือชาย ('.$d.')</a><p></p></li>';?>
 
-      <li> <a align="left" href="/se/watchchoosesex" style="color:#ffffff">กำไรข้อมือ (89)</a><p></p></li>
-      <li> <a align="left" href="/" style="color:#ffffff">ต่างหู (543)</a><p></p></li>
+      <li> <a align="left" href="/se/categoryall/T02" style="color:#ffffff">กำไรข้อมือ (89)</a><p></p></li>
+      <li> <a align="left" href="/se/categoryall/T02" style="color:#ffffff">ต่างหู (543)</a><p></p></li>
      <?php
      echo '<li> <a align="left" href="/se/categoryall/T01" style="color:#ffffff">แหวน ('.$a.')</a><p></p></li>';?>
-      <li> <a align="left" href="/" style="color:#ffffff">สร้อย (1,980)</a><p></p></li>
-      <li> <a align="left" href="/" style="color:#ffffff">ที่คาดผม (89)</a><p></p></li>
+      <li> <a align="left" href="/se/categoryall/T02" style="color:#ffffff">สร้อย (1,980)</a><p></p></li>
+      <li> <a align="left" href="/se/categoryall/T02" style="color:#ffffff">ที่คาดผม (89)</a><p></p></li>
       <a style="float:right; margin:10px;" href="/se/categoryall" type="button" class="btn btn-default">เพิ่มเติม</a>
       
 </ul>

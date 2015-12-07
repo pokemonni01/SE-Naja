@@ -75,7 +75,7 @@ background-attachment: fixed;
       <a href="membertype" style="width:90%;height:60px" type="button" class="btn btn-default"><h4>จัดการสถานะสมาชิก</h4></a>
       <p></p>
       <div><h3>รายงาน</h3></div>
-      <a href="/se" style="width:90%;height:60px" type="button" class="btn btn-default"><h4>ออกรายงาน</h4></a>
+      <a href="report1" style="width:90%;height:60px" type="button" class="btn btn-default"><h4>ออกรายงาน</h4></a>
       <p></p>
       <p>&nbsp;</p>
 <p>&nbsp;</p>

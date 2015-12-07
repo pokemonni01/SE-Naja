@@ -1,4 +1,5 @@
 @extends('home')
+@section('title','contactus')
 @section('activebar')
 "#contactus"
 @stop

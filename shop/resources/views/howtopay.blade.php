@@ -1,4 +1,5 @@
 @extends('home')
+@section('title','howtopay')
 @section('activebar')
 "#howtopay"
 @stop

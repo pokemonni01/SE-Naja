@@ -26,10 +26,18 @@ Route::get('/adminadd','Home_Controller@adminadd');
 Route::get('/categoryall','Home_Controller@categoryall');
 Route::get('/watchchoosesex','Home_Controller@watchchoosesex');
 Route::get('/categoryall/{id}','Home_Controller@showProduct');
-
+Route::get('/notification','Home_Controller@notification');
+Route::get('/detaildesigngood','Home_Controller@detaildesigngood');
+Route::get('/designmale','Home_Controller@designmale');
+Route::get('/designfemale','Home_Controller@designfemale');
+Route::get('/forget','Home_Controller@forget');
+//aadmin
+Route::get('/admin/print1','Stock_Controller@print1');
+Route::get('/admin/report1','Stock_Controller@report1');
 //Register
 Route::get('/register','Home_Controller@register');
 Route::post('/register','Home_Controller@submit');
+Route::post('/forget','Home_Controller@forgetpassword');
 
 //Stock
 Route::get('/admin/stock/','Stock_Controller@stock');

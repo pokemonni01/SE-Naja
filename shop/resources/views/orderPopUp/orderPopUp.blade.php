@@ -6,33 +6,6 @@
 }
 </style>
 <script type="text/javascript">
-$(document).ready(function(){
-    $(":input").change(function() {
-        var productId = $(this).attr('proid');
-        var value = $(this).val();
-        $.ajax({
-            type: "post",
-            url: '/se/getproduct',
-            data: { 'product_id': productId },
-            beforeSend: function (xhr) {
-                var token = $('meta[name="csrf_token"]').attr('content');
-
-                if (token) {
-                  return xhr.setRequestHeader('X-CSRF-TOKEN', token);
-              }
-          },
-          success: function(data){
-            console.log(data);
-            var totalPrice = parseInt( data.product_price )*value;
-            $("#total"+productId).text(totalPrice);
-    }
-    ,error:function(){ 
-        alert("Download ข้อมูลผิดพลาด!!");
-    }
-});
-    });
-});
-
 function clearBasket(){
     $.ajax({
             type: "post",
