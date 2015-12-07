@@ -25,7 +25,7 @@ Route::get('/information','Home_Controller@information');
 Route::get('/adminpage','Home_Controller@adminpage');
 Route::get('/adminadd','Home_Controller@adminadd');
 Route::get('/categoryall','Home_Controller@categoryall');
-Route::get('/categoryall/allproduct','Home_Controller@allproduct');
+Route::get('/categoryall/{id}','Home_Controller@showProduct');
 
 Route::get('/dashboard','Admin_Controller@admin');
 Route::get('/admin/stock/','Stock_Controller@stock');

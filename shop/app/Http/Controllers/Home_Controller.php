@@ -47,10 +47,11 @@ class Home_Controller extends Controller
 	public function categoryall(){
 		return view('categoryall');
 	}
-	public function allproduct(){
-		$watch=DB::table('product')->get();
 
-		return view('allproduct',array('watch'=>$watch));
+	public function showProduct($id){
+		$product =DB::table('product')->where('product_type',$id)->get();
+		$product_type = DB::table('product_type')->where('type_id',$id)->first();
+		return view('allproduct',array('product'=>$product,'product_type'=>$product_type));
 	}
 }
 
